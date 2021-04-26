@@ -1,10 +1,10 @@
 # Warファイルがデプロイ出来なかったときの対応
 
-**[問題]**
+**[問題]**  
 はじめて作成したWebアプリをWarファイルにデプロイしようとしたとき
 にページが表示されず404エラーが表示された。
 
-**[原因]**
+**[原因]**  
 SpringBootServletInitializerクラスを配置していなかった。
 
 **[解決方法やコマンド]**
@@ -27,6 +27,6 @@ public class ServletInitializer extends SpringBootServletInitializer {
 		return application.sources(SimpleStressCheckerApplication.class);
 ```
 
-**[参考文献]**
-クラスSpringBootServletInitializer
+**[参考文献]**  
+クラスSpringBootServletInitializer  
 https://docs.spring.io/spring-boot/docs/current/api/org/springframework/boot/web/servlet/support/SpringBootServletInitializer.html
